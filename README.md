@@ -1,20 +1,15 @@
-# DemoMe
 Demo Me is an application for a Indie Labels' A&amp;R to streamline managing demo submissions
 
-Mirii Made Magic
+Springboard Capstone 2 
 
-#Demo Me
-
-##Springboard Capstone 2 
-
-##OVERVIEW
+OVERVIEW
 ========
 
 Demo Me is a one stop shop for independent labels who want to stream-line their A&R workflow. The app will use Filestack API for file management and cloud storage, the front end will be done in React for a polished frontend, and Express as the backend to handle API calls and user data. 
 
 This will be a backend centered app as React will only be serving to make the UI attractive. The core of the app will be done in Express. Express will need to handle making calls to Filestack, managing the queue and handling user data as well as the demos itself. 
 
-##GOALS
+GOALS
 =====
 
 1.  Create an Upload portal for artists to upload their demos 
@@ -31,7 +26,7 @@ This will be a backend centered app as React will only be serving to make the UI
 
 7.  Label Admins will be able to view "interested" demos contact artists accordingly
 
-##Anticipated Challenges
+Anticipated Challenges
 ======================
 
 -   Avoiding collisions when an A&R rep accesses the queue-no two people get the same demo
@@ -46,44 +41,45 @@ This will be a backend centered app as React will only be serving to make the UI
 
 -   How will we approach making sure the demo gets to the correct label?
 
-##Stretch Goals
+Stretch Goals
 =============
 
-###Adding Messaging
+Adding Messaging
 ----------------
 
 Create Demo me direct messaging so A&R reps can talk to one another as well label admins!
 
-###Adding Gmail Compatibility
+Adding Gmail Compatibility
 --------------------------
 
 -   Admins should be able to contact artists on gmail directly from the Demo Me app 
 
 -   E-mail sent by artists to label go both into the label g-mail AND the Demo Me App
 
-###Artist Profiles
+Artist Profiles
 ---------------
 
 -   Artists will be able to create a profile with their social media, contact information, press kits as well as current demo tracks
 
 -   This information will be used to "easy submit" their demos to various labels - labels will indicate whether they will allow "easy submit" demos.
 
-###Create Widget
+Create Widget
 -------------
 
 Create a Widget that labels can embed into their website for Demo Submission
 
-###Mobile App
+Mobile App
 ----------
 
 Create a mobile app for efficient demo handling on the go!
 
-##DataBase Schemas 
+DataBase Schemas 
 =================
 
 Models:
+=================
 
-####Label
+Label
 
 -   ID - Primary Key (Int, auto increment)
 
@@ -91,7 +87,7 @@ Models:
 
 -   Employees- Foreign Key (Int)
 
-#####Employees
+Employees
 
 -   ID - Primary Key (Int, auto increment)
 
@@ -109,7 +105,7 @@ Models:
 
 -   isAdmin(check if user is admin)
 
-#####Demos 
+Demos 
 
 -   ID - Primary Key (Int, auto increment)
 
@@ -125,7 +121,7 @@ Models:
 
 -   contactAt- String
 
-######We'll Need functionality for:
+We'll Need functionality for:
 
 -   Getting all unlistened - select all where rejected AND accepted are false
 
@@ -135,13 +131,15 @@ Models:
 
 -   Patch Request to DB and updates the demo upon changing the status to "accepted"
 
-##Through or Join Tables
 
-####Employee Label
+Through or Join Tables
+=================
+
+Employee Label
 - Employee_id
 - Label_id
 
-####Demo Label
+Demo Label
 - Demo_id
 - Label_id
 
