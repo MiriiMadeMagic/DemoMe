@@ -63,6 +63,8 @@ Artist Profiles
 
 -   This information will be used to "easy submit" their demos to various labels - labels will indicate whether they will allow "easy submit" demos.
 
+-   Artists will be able to check the status of the demos they submit
+
 Create Widget
 -------------
 
@@ -72,6 +74,8 @@ Mobile App
 ----------
 
 Create a mobile app for efficient demo handling on the go!
+
+
 
 DataBase Schemas 
 =================
@@ -115,9 +119,7 @@ Demos 
 
 -   submittedTo- Foreign Key (Label Id)
 
--   rejected- Defaults to False 
-
--   accepted- Defaults to False
+-   status enum [pending,accepted,rejected]
 
 -   contactAt- String
 
